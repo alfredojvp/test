@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherPunk Decoder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/Logo.png" alt="Alura_logo">
+    </header>
+    <main>
+        <section class="section__1">
+            <textarea class="text-area" id="textImput" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="warning_container">
+                <h6 class="warning"><img class="exclamation_logo" src="./assets/bi--exclamation-circle-fill.png">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="buttons">
+                <button class="cipher__button" onclick="showEncryptedText();" id="showResult">Encriptar</button>
+                <button class="decipher__button" onclick="showDecryptedText();" id="showDecryptedResult">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="ciphered__message" id="result" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copy__button" disabled onclick="copyText();" id="copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <label class="footer__item">Developed by Alfredo Velez</label>
+        <label class="footer__item"><img class="footer__icon" src="./assets/github.png" alt="github__icon">Github: <a class="footer__item" id="github" href="https://github.com/alfredojvp">alfredojvp</a></label>
+        <label class="footer__item"><img class="footer__icon" src="./assets/linkedin.png" alt="LinkedIn__icon">LinkedIn: <a class="footer__item" id="LinkedIn" href="https://www.linkedin.com/in/alfredo-jose-velez-parra-447438208/">Alfredo Velez</a></label>
+        <label class="footer__item"><img class="footer__icon" src="./assets/gmail.png" alt="mail_icon">Mail: <span class="footer__item">alfredojvp@hotmail.com</span></label>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
