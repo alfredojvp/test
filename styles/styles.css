@@ -165,6 +165,7 @@ footer {
         position: absolute;
         margin-left: 0;
         transform: translate(-200px);
+        text-align: center;
     }
 
     footer {
