@@ -166,6 +166,7 @@ footer {
         margin-left: 0;
         transform: translate(-200px);
         text-align: center;
+        justify-content: center;
     }
 
     footer {
